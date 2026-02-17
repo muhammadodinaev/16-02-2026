@@ -165,11 +165,33 @@
   .m-auto {
     margin: auto;
   }
+  .mt-30 {
+    margin-top: calc(var(--spacing) * 30);
+  }
+  .mt-\[100px\] {
+    margin-top: 100px;
+  }
   .flex {
     display: flex;
   }
   .table {
     display: table;
+  }
+  .size-\[48px\] {
+    width: 48px;
+    height: 48px;
+  }
+  .h-\[300px\] {
+    height: 300px;
+  }
+  .h-\[400px\] {
+    height: 400px;
+  }
+  .h-\[500px\] {
+    height: 500px;
+  }
+  .h-\[580px\] {
+    height: 580px;
   }
   .w-8 {
     width: calc(var(--spacing) * 8);
@@ -185,6 +207,15 @@
   }
   .w-\[100\%\] {
     width: 100%;
+  }
+  .w-\[391px\] {
+    width: 391px;
+  }
+  .w-\[470\] {
+    width: 470;
+  }
+  .w-\[470px\] {
+    width: 470px;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -316,6 +347,37 @@
   .p-\[10px\] {
     padding: 10px;
   }
+  .p-\[100px\] {
+    padding: 100px;
+  }
+  .pt-\[50px\] {
+    padding-top: 50px;
+  }
+  .pt-\[100px\] {
+    padding-top: 100px;
+  }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
+  .text-\[48px\] {
+    font-size: 48px;
+  }
+  .font-\[400\] {
+    --tw-font-weight: 400;
+    font-weight: 400;
+  }
+  .font-\[500\] {
+    --tw-font-weight: 500;
+    font-weight: 500;
+  }
+  .font-\[500px\] {
+    --tw-font-weight: 500px;
+    font-weight: 500px;
+  }
+  .font-\[600\] {
+    --tw-font-weight: 600;
+    font-weight: 600;
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -332,6 +394,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -341,6 +407,7 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }
